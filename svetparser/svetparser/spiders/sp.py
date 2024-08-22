@@ -12,5 +12,5 @@ class SpSpider(scrapy.Spider):
             yield {
                 "name": svet.css("a span::text").get(),
                 "price": svet.css("span.ui-LD-ZU.KIkOH::text").get(),
-                "url": svet.css("a::attr(href)").get()  # divan.css("a").attrib['href']
+                "url": svet.css("a::attr(href)").get()  
             }
